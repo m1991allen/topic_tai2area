@@ -1,49 +1,52 @@
 <template>
     <div>
         <Header />
-        <Banner />
-        <Video />
-        <CharacterVoting />
-        <Result />
-        <CharacterProfile />
+        <COntentBanner />
+        <ContentVideo />
+        <ContentVoting />
+        <InfogramResult />
+        <ContentProfile />
         <ContentProcess />
-        <News />
+        <InfogramVoted />
+        <ContentNews />
         <Footer />
-        <Addition />
-        <Totop />
-        <Bottom />
+        <AdditionSide />
+        <AdditionScrolltop />
+        <AdditionBottom />
     </div>
 </template>
 
 <script>
 import Header from '@/components/Header.vue'
-import Banner from '@/components/Banner.vue'
-import Video from '@/components/Video.vue'
-import CharacterVoting from '@/components/Character_voting.vue'
-import CharacterProfile from '@/components/Character_profile.vue'
+import COntentBanner from '@/components/Content_banner.vue'
+import ContentVideo from '@/components/Content_video.vue'
+import ContentVoting from '@/components/Content_voting.vue'
+import ContentProfile from '@/components/Content_profile.vue'
 import ContentProcess from '@/components/Content_process.vue'
-import Result from '@/components/Result.vue'
-import News from '@/components/News.vue'
+import InfogramResult from '@/components/Infogram_result.vue'
+import InfogramVoted from '@/components/Infogram_voted.vue'
+import ContentNews from '@/components/Content_news.vue'
 import Footer from '@/components/Footer.vue'
-import Addition from '@/components/Addition.vue'
-import Totop from './components/Totop.vue'
-import Bottom from './components/Bottom.vue'
+import AdditionSide from '@/components/Addition_side.vue'
+import AdditionScrolltop from './components/Addition_scrolltop.vue'
+import AdditionBottom from './components/Addition_bottom.vue'
 
 export default {
     name: 'App',
     components: {
         Header,
-        Banner,
-        Video,
-        CharacterVoting,
-        CharacterProfile,
+        COntentBanner,
+        ContentVideo,
+        ContentVoting,
+        ContentProfile,
         ContentProcess,
-        Result,
-        News,
+        InfogramResult,
+        InfogramVoted,
+        ContentNews,
         Footer,
-        Addition,
-        Totop,
-        Bottom,
+        AdditionSide,
+        AdditionScrolltop,
+        AdditionBottom,
     },
 }
 </script>
@@ -178,9 +181,11 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+</style>
 
+<style>
+/* 全局自訂 */
 * {
-    box-sizing: border-box;
     scroll-behavior: smooth;
 }
 
@@ -192,7 +197,7 @@ body {
 }
 
 #app {
-    font-family: Helvetica, Arial, sans-serif, 微軟正黑體, 蘋果儷中黑;
+    font-family: Helvetica, 微軟正黑體, 蘋果儷中黑, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
@@ -218,7 +223,7 @@ h3 {
 }
 
 h4 {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
 }
 
 ul li {
@@ -309,5 +314,19 @@ figure {
 .nav-item {
     background-color: rgb(233 233 233);
     border-left: 2px solid white;
+}
+
+/* 候選人編號樣式 */
+.number {
+    color: red;
+    font-size: 1.4rem;
+    font-variant-numeric: normal;
+    position: relative;
+    border: 1px solid rgb(74, 74, 74);
+    border-radius: 50%;
+    padding: 0.3rem 0.66rem;
+    font-family: monospace;
+    margin-right: 0.5rem;
+    text-align: center;
 }
 </style>

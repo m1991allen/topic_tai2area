@@ -27,7 +27,7 @@ export default {
                     anchor: '#profile',
                 },
                 {
-                    title: '罷免程序',
+                    title: '補選程序',
                     anchor: '#porcess',
                 },
                 {

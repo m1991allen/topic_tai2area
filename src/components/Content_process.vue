@@ -18,7 +18,7 @@
 export default {
     data() {
         return {
-            title: '罷免程序',
+            title: '補選程序',
             list: [
                 {
                     date: '2021.12.8',
