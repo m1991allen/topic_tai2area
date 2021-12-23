@@ -2,10 +2,21 @@
     <div class="section" id="voting">
         <div class="section-box">
             <!-- 同意票/不同意票 -->
-            <div v-for="(item, index) of getProfile" :key="index" class="vote_info">
+            <div
+                v-for="(item, index) of getProfile"
+                :key="index"
+                class="vote_info"
+                :class="{ selected: getVotes[index].elected }"
+            >
                 <h4>
                     <div>
-                        <span class="number">{{ item.no }}</span> {{ item.party }}
+                        <span class="fa-stack">
+                            <!-- The icon that will wrap the number -->
+                            <span class="fa fa-circle-o fa-stack-2x"></span>
+                            <!-- a strong element with the custom content, in this case a number -->
+                            <strong class="fa-stack-1x"> {{ item.no }}</strong>
+                        </span>
+                        <span>{{ item.party }}</span>
                         <img :src="getProfile[index].party_photo" alt="政黨" />
                         <span :class="{ elected: getVotes[index].elected }"></span>
                     </div>
@@ -65,6 +76,10 @@ h4 div:nth-child(1) {
     align-items: center;
 }
 
+div h4 {
+    position: relative;
+}
+
 /* vidoe */
 .iframe-container {
     overflow: hidden;
@@ -104,6 +119,7 @@ h4 div:nth-child(1) {
 
 .vote_layout {
     text-align: right;
+    margin-top: 1rem;
 }
 
 .vote_bar {
@@ -121,6 +137,11 @@ h4 div:nth-child(1) {
 
 .vote_progress {
     width: 0%;
+}
+
+.vote_info {
+    border-radius: 18px;
+    padding: 0.3rem;
 }
 
 .vote_info:nth-child(1) .vote_progress {
@@ -161,11 +182,31 @@ h4 div:nth-child(1) {
 .elected {
     content: '';
     background-image: url('../assets/elected.png');
-    width: 35px;
+    width: 65px;
     height: 36px;
     display: inline-block;
     background-size: cover;
     background-repeat: no-repeat;
     margin-left: 1rem;
+    transform: rotate(349deg);
+    animation: float 1s infinite;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.selected {
+    background-color: #dcefff;
+}
+
+@keyframes float {
+    0% {
+        top: 0px;
+    }
+    50% {
+        top: 10px;
+    }
+    100% {
+        top: 0px;
+    }
 }
 </style>

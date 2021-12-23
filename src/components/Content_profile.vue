@@ -7,7 +7,15 @@
                     <div class="grid">
                         <div>
                             <h4>
-                                <span class="number">{{ getProfile[0].no }}</span> {{ getProfile[0].party }}
+                                <span class="fa-stack">
+                                    <!-- The icon that will wrap the number -->
+                                    <span class="fa fa-circle-o fa-stack-2x"></span>
+                                    <!-- a strong element with the custom content, in this case a number -->
+                                    <strong class="fa-stack-1x"> {{ getProfile[0].no }}</strong>
+                                </span>
+                                <div>
+                                    {{ getProfile[0].party }}
+                                </div>
                             </h4>
                             <div>
                                 <img :src="getProfile[0].photo" loading="lazy" />
@@ -58,7 +66,15 @@
                     <div class="grid">
                         <div>
                             <h4>
-                                <span class="number">{{ getProfile[1].no }}</span> {{ getProfile[1].party }}
+                                <span class="fa-stack">
+                                    <!-- The icon that will wrap the number -->
+                                    <span class="fa fa-circle-o fa-stack-2x"></span>
+                                    <!-- a strong element with the custom content, in this case a number -->
+                                    <strong class="fa-stack-1x"> {{ getProfile[1].no }}</strong>
+                                </span>
+                                <div>
+                                    {{ getProfile[1].party }}
+                                </div>
                             </h4>
                             <div>
                                 <img :src="getProfile[1].photo" loading="lazy" />
@@ -109,7 +125,15 @@
                     <div class="grid">
                         <div>
                             <h4>
-                                <span class="number">{{ getProfile[2].no }}</span> {{ getProfile[2].party }}
+                                <span class="fa-stack">
+                                    <!-- The icon that will wrap the number -->
+                                    <span class="fa fa-circle-o fa-stack-2x"></span>
+                                    <!-- a strong element with the custom content, in this case a number -->
+                                    <strong class="fa-stack-1x"> {{ getProfile[2].no }}</strong>
+                                </span>
+                                <div>
+                                    {{ getProfile[2].party }}
+                                </div>
                             </h4>
                             <div>
                                 <img :src="getProfile[2].photo" loading="lazy" />
@@ -160,7 +184,15 @@
                     <div class="grid">
                         <div>
                             <h4>
-                                <span class="number">{{ getProfile[3].no }}</span> {{ getProfile[3].party }}
+                                <span class="fa-stack">
+                                    <!-- The icon that will wrap the number -->
+                                    <span class="fa fa-circle-o fa-stack-2x"></span>
+                                    <!-- a strong element with the custom content, in this case a number -->
+                                    <strong class="fa-stack-1x"> {{ getProfile[3].no }}</strong>
+                                </span>
+                                <div>
+                                    {{ getProfile[3].party }}
+                                </div>
                             </h4>
                             <div>
                                 <img :src="getProfile[3].photo" loading="lazy" />
@@ -211,7 +243,15 @@
                     <div class="grid">
                         <div>
                             <h4>
-                                <span class="number">{{ getProfile[4].no }}</span> {{ getProfile[4].party }}
+                                <span class="fa-stack">
+                                    <!-- The icon that will wrap the number -->
+                                    <span class="fa fa-circle-o fa-stack-2x"></span>
+                                    <!-- a strong element with the custom content, in this case a number -->
+                                    <strong class="fa-stack-1x"> {{ getProfile[4].no }}</strong>
+                                </span>
+                                <div>
+                                    {{ getProfile[4].party }}
+                                </div>
                             </h4>
                             <div>
                                 <img :src="getProfile[4].photo" loading="lazy" />
@@ -281,11 +321,10 @@ export default {
 
 <style scoped>
 h4 {
-    text-align: center;
-    display: inline-block;
-    align-items: center;
-    margin: auto;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 p {

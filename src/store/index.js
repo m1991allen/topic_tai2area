@@ -51,17 +51,17 @@ export default new Vuex.Store({
                 },
                 opinion: {
                     title: '政見',
-                    opin: ['土地4筆', '建物5筆', '汽車1筆'],
+                    opin: [''],
                 },
                 property: {
                     title: '財產申報',
-                    prop: [''],
+                    prop: ['土地4筆', '建物5筆', '汽車1筆'],
                     file: ['https://www.ftvnews.com.tw/topics/taichillVote/property/林金連財申表.pdf'],
                 },
             },
             {
                 name: '李昇翰',
-                no: '3',
+                no: '3 ',
                 party: '李昇翰',
                 photo: require('../assets/李昇翰.png'),
                 party_photo: require('../assets/無黨籍.png'),
@@ -160,11 +160,11 @@ export default new Vuex.Store({
         ],
 
         vote_personal: [
-            { no: 1, valid_vote: 0, percent: 0, elected: false },
-            { no: 2, valid_vote: 0, percent: 0, elected: false },
-            { no: 3, valid_vote: 0, percent: 0, elected: false },
-            { no: 4, valid_vote: 0, percent: 0, elected: true },
-            { no: 5, valid_vote: 0, percent: 0, elected: false },
+            { no: 1, valid_vote: 0, percent: 0, elected: false, },
+            { no: 2, valid_vote: 0, percent: 0, elected: false, },
+            { no: 3, valid_vote: 0, percent: 0, elected: false, },
+            { no: 4, valid_vote: 0, percent: 0, elected: true, },
+            { no: 5, valid_vote: 0, percent: 0, elected: false, },
         ],
         vote_total: 120000,
     },

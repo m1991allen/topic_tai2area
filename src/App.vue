@@ -317,16 +317,12 @@ figure {
 }
 
 /* 候選人編號樣式 */
-.number {
+.fa.fa-circle-o {
+    font-weight: lighter !important;
+    color: #494949;
+}
+.fa-stack-1x {
     color: red;
-    font-size: 1.4rem;
-    font-variant-numeric: normal;
-    position: relative;
-    border: 1px solid rgb(74, 74, 74);
-    border-radius: 50%;
-    padding: 0.3rem 0.66rem;
-    font-family: monospace;
-    margin-right: 0.5rem;
-    text-align: center;
+    font-weight: bolder;
 }
 </style>
