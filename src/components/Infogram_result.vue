@@ -3,21 +3,9 @@
         <h3>{{ title }}</h3>
         <div
             class="infogram-embed"
-            data-id="977a1895-eeab-40c5-9b42-cc2c768ae870"
+            data-id="0cc1b8f5-0f9c-44f7-8f84-75f71e8ef602"
             data-type="interactive"
-            data-title="Infographic Modern"
-        ></div>
-
-        <div
-            style="
-                padding: 8px 0;
-                font-family: Arial !important;
-                font-size: 13px !important;
-                line-height: 15px !important;
-                text-align: center;
-                border-top: 1px solid #dadada;
-                margin: 0 30px;
-            "
+            data-title="中二補選-投票結果"
         ></div>
     </div>
 </template>

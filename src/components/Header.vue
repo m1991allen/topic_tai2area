@@ -20,7 +20,7 @@ export default {
             list: [
                 {
                     title: '直播專區',
-                    anchor: '#voting',
+                    anchor: '#video',
                 },
                 {
                     title: '候選人介紹',

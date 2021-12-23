@@ -1,5 +1,6 @@
 <template>
     <div class="section" id="voting">
+        <h3>{{ title }}</h3>
         <div class="section-box">
             <!-- 同意票/不同意票 -->
             <div
@@ -36,6 +37,11 @@
 
 <script>
 export default {
+    data() {
+        return {
+            title: '開票區',
+        }
+    },
     methods: {
         // 持續抓取新票數
         keepGetVotes() {

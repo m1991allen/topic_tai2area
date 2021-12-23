@@ -2,12 +2,12 @@
     <div>
         <Header />
         <COntentBanner />
-        <ContentVideo />
         <ContentVoting />
         <InfogramResult />
         <ContentProfile />
         <ContentProcess />
         <InfogramVoted />
+        <ContentVideo />
         <ContentNews />
         <Footer />
         <AdditionSide />

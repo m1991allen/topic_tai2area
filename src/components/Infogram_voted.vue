@@ -3,11 +3,10 @@
         <h3>{{ title }}</h3>
         <div
             class="infogram-embed"
-            data-id="977a1895-eeab-40c5-9b42-cc2c768ae870"
+            data-id="135ae998-7e35-4c67-a012-8eac86d3d7ac"
             data-type="interactive"
-            data-title="Infographic Modern"
+            data-title="中二補選 - 歷年投票"
         ></div>
-
         <div
             style="
                 padding: 8px 0;

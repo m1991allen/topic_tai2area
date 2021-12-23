@@ -1,5 +1,5 @@
 <template>
-    <div class="section" id="voting">
+    <div class="section" id="video">
         <h3>{{ title }}</h3>
         <div class="section-box">
             <div class="iframe-container">

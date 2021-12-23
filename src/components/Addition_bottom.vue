@@ -1,6 +1,6 @@
 <template>
     <div class="bottom">
-        <a href="#voting">直播專區</a>
+        <a href="#video">直播專區</a>
         <a href="#profile">候選人介紹</a>
         <a href="#news">最新新聞</a>
     </div>
