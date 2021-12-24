@@ -3,7 +3,7 @@ const Version = new Date().getTime()
 const path = require('path')
 module.exports = {
     publicPath: './', // 預設為/ 所有html下的js css 連結都會是/js/xx,在輸出到web server 路徑會有問題,需用./
-    outputDir: 'taichillvote', // 輸出路徑
+    outputDir: 'tai2area', // 輸出路徑
     assetsDir: './', // 要輸出的asset目錄,設定hello,則會輸出成 hello/js/xxx,
     devServer: {
         port: 1991,
