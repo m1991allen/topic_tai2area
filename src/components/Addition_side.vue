@@ -1,15 +1,15 @@
 <template>
     <div class="addition">
         <a
-            href="https://social-plugins.line.me/lineit/share?url=https://www.ftvnews.com.tw/topics/taichillvote/"
+            href="https://social-plugins.line.me/lineit/share?url=https://www.ftvnews.com.tw/topics/tai2area/"
             target="_blank"
         >
-            <span id="social_line" data-href="https://www.ftvnews.com.tw/topics/taichillvote/"></span>
+            <span id="social_line" data-href="https://www.ftvnews.com.tw/topics/tai2area/"></span>
         </a>
 
         <a
             target="_blank"
-            href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.ftvnews.com.tw%2Ftopics%2Ftaichillvote%2F&amp;src=sdkpreparse"
+            href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.ftvnews.com.tw%2Ftopics%2Ftai2area%2F&amp;src=sdkpreparse"
             class="fb-xfbml-parse-ignore"
             ><span id="social_facebook"></span
         ></a>

@@ -23,7 +23,7 @@ export default new Vuex.Store({
                 property: {
                     title: '財產申報',
                     prop: [''],
-                    file: ['https://www.ftvnews.com.tw/topics/taichillVote/property/張烱春財申表.pdf'],
+                    file: ['https://www.ftvnews.com.tw/topics/tai2area/property/張烱春財申表.pdf'],
                 },
             },
             {
@@ -56,7 +56,7 @@ export default new Vuex.Store({
                 property: {
                     title: '財產申報',
                     prop: ['土地4筆', '建物5筆', '汽車1筆'],
-                    file: ['https://www.ftvnews.com.tw/topics/taichillVote/property/林金連財申表.pdf'],
+                    file: ['https://www.ftvnews.com.tw/topics/tai2area/property/林金連財申表.pdf'],
                 },
             },
             {
@@ -84,7 +84,7 @@ export default new Vuex.Store({
                         '存款 87萬3190元',
                         '債務 532萬6852元',
                     ],
-                    file: ['https://www.ftvnews.com.tw/topics/taichillVote/property/李昇翰財申表.pdf'],
+                    file: ['https://www.ftvnews.com.tw/topics/tai2area/property/李昇翰財申表.pdf'],
                 },
             },
             {
@@ -116,7 +116,7 @@ export default new Vuex.Store({
                         '存款 172萬0389元',
                         '債務 491萬9800元',
                     ],
-                    file: ['https://www.ftvnews.com.tw/topics/taichillVote/property/林靜儀財申表.pdf'],
+                    file: ['https://www.ftvnews.com.tw/topics/tai2area/property/林靜儀財申表.pdf'],
                 },
             },
             {
@@ -154,17 +154,17 @@ export default new Vuex.Store({
                         `債務 7422萬1077元`,
                         `事業投資 1800萬元`,
                     ],
-                    file: ['https://www.ftvnews.com.tw/topics/taichillVote/property/顏寬恒財申表.pdf'],
+                    file: ['https://www.ftvnews.com.tw/topics/tai2area/property/顏寬恒財申表.pdf'],
                 },
             },
         ],
 
         vote_personal: [
-            { no: 1, valid_vote: 0, percent: 0, elected: false, },
-            { no: 2, valid_vote: 0, percent: 0, elected: false, },
-            { no: 3, valid_vote: 0, percent: 0, elected: false, },
-            { no: 4, valid_vote: 0, percent: 0, elected: true, },
-            { no: 5, valid_vote: 0, percent: 0, elected: false, },
+            { no: 1, valid_vote: 0, percent: 0, elected: false },
+            { no: 2, valid_vote: 0, percent: 0, elected: false },
+            { no: 3, valid_vote: 0, percent: 0, elected: false },
+            { no: 4, valid_vote: 0, percent: 0, elected: true },
+            { no: 5, valid_vote: 0, percent: 0, elected: false },
         ],
         vote_total: 120000,
     },
@@ -172,7 +172,7 @@ export default new Vuex.Store({
         votes(state) {
             // eslint-disable-next-line no-undef
             axios
-                .get('https://ftvnews.com.tw/topics/taichillVote/poll220109.json')
+                .get('https://ftvnews.com.tw/topics/tai2area/poll220109.json')
                 .then(function (res) {
                     let votes = res.data.Data
                     let total =
