@@ -39,7 +39,7 @@
                                         </li>
                                     </ul>
                                 </b-tab>
-                                <b-tab title="政見">
+                                <b-tab title="政見" class="opinion">
                                     <ul>
                                         <li v-for="(item, index) of getProfile[0].opinion.opin" :key="index">
                                             {{ item }}
@@ -98,7 +98,7 @@
                                         </li>
                                     </ul>
                                 </b-tab>
-                                <b-tab title="政見">
+                                <b-tab title="政見" class="opinion">
                                     <ul>
                                         <li v-for="(item, index) of getProfile[1].opinion.opin" :key="index">
                                             {{ item }}
@@ -157,7 +157,7 @@
                                         </li>
                                     </ul>
                                 </b-tab>
-                                <b-tab title="政見">
+                                <b-tab title="政見" class="opinion">
                                     <ul>
                                         <li v-for="(item, index) of getProfile[2].opinion.opin" :key="index">
                                             {{ item }}
@@ -216,7 +216,7 @@
                                         </li>
                                     </ul>
                                 </b-tab>
-                                <b-tab title="政見">
+                                <b-tab title="政見" class="opinion">
                                     <ul>
                                         <li v-for="(item, index) of getProfile[3].opinion.opin" :key="index">
                                             {{ item }}
@@ -275,7 +275,7 @@
                                         </li>
                                     </ul>
                                 </b-tab>
-                                <b-tab title="政見">
+                                <b-tab title="政見" class="opinion">
                                     <ul>
                                         <li v-for="(item, index) of getProfile[4].opinion.opin" :key="index">
                                             {{ item }}
@@ -399,5 +399,13 @@ a:hover {
     .grid-inner {
         grid-template-columns: 1fr;
     }
+}
+
+.opinion ul li {
+    list-style: cjk-ideographic;
+}
+
+.opinion ul {
+    padding: 2rem;
 }
 </style>

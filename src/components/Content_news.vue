@@ -138,6 +138,9 @@ export default {
 .news img {
     width: 100%;
 }
+ul {
+    margin: 1rem;
+}
 
 .title {
     display: -webkit-box;

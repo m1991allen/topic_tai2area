@@ -2,11 +2,11 @@
     <div>
         <Header />
         <COntentBanner />
-        <ContentVoting />
-        <InfogramResult />
+        <!-- <ContentVoting /> -->
+        <!-- <InfogramResult /> -->
         <ContentProfile />
-        <ContentProcess />
         <InfogramVoted />
+        <ContentProcess />
         <ContentVideo />
         <ContentNews />
         <Footer />
@@ -20,11 +20,11 @@
 import Header from '@/components/Header.vue'
 import COntentBanner from '@/components/Content_banner.vue'
 import ContentVideo from '@/components/Content_video.vue'
-import ContentVoting from '@/components/Content_voting.vue'
-import ContentProfile from '@/components/Content_profile.vue'
-import ContentProcess from '@/components/Content_process.vue'
-import InfogramResult from '@/components/Infogram_result.vue'
+// import ContentVoting from '@/components/Content_voting.vue'
 import InfogramVoted from '@/components/Infogram_voted.vue'
+import ContentProfile from '@/components/Content_profile.vue'
+// import InfogramResult from '@/components/Infogram_result.vue'
+import ContentProcess from '@/components/Content_process.vue'
 import ContentNews from '@/components/Content_news.vue'
 import Footer from '@/components/Footer.vue'
 import AdditionSide from '@/components/Addition_side.vue'
@@ -37,11 +37,11 @@ export default {
         Header,
         COntentBanner,
         ContentVideo,
-        ContentVoting,
-        ContentProfile,
-        ContentProcess,
-        InfogramResult,
+        // ContentVoting,
         InfogramVoted,
+        ContentProfile,
+        // InfogramResult,
+        ContentProcess,
         ContentNews,
         Footer,
         AdditionSide,
@@ -217,7 +217,7 @@ h3 {
     font-size: 1.6rem;
     font-weight: bolder;
     padding: 0.6rem 0;
-    margin: 2.4rem 0;
+    margin: 2rem 0 0.1rem 0;
     color: white;
     background-color: #45588f;
 }
@@ -237,7 +237,7 @@ p {
     text-align: left;
     margin: 0.5rem 0 2rem 0;
     line-height: 1.4rem;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
 @media screen and (max-width: 768px) {
