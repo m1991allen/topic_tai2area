@@ -1,7 +1,7 @@
 <template>
     <div class="main">
         <h1>{{ title }}</h1>
-        <a href="#voting">
+        <a href="#video">
             <img src="../assets/banner.jpg" />
         </a>
     </div>
