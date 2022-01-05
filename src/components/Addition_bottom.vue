@@ -28,9 +28,16 @@ export default {}
     text-align: center;
 }
 
-.bottom a:nth-child(1),
+.bottom a:nth-child(1) {
+    background-color: #374674;
+}
+
 .bottom a:nth-child(2) {
-    border-right: 0.01rem solid #a5a5a5;
+    background-color: #425488;
+}
+
+.bottom a:nth-child(3) {
+    background-color: #5063a2;
 }
 
 .bottom a:hover {
