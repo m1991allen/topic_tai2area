@@ -30,7 +30,7 @@ export default new Vuex.Store({
                 },
                 property: {
                     title: '財產申報',
-                    prop: [''],
+                    prop: ['空白'],
                     file: ['https://www.ftvnews.com.tw/topics/tai2area/property/張烱春財申表.pdf'],
                 },
             },

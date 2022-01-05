@@ -178,6 +178,11 @@ ul li:before {
     content: '#';
 }
 
+.news a div:nth-child(1) {
+    overflow-y: hidden;
+    max-height: 150px;
+}
+
 .btn_more {
     max-width: 300px;
     margin: 3rem auto;
