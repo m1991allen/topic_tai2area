@@ -120,18 +120,30 @@ export default {
 
 .news {
     transition: 0.5s;
+    background-color: #eff1f7;
+    border-radius: 0 0 20px 20px;
 }
 
 .news:hover {
-    box-shadow: 1px 1px 1px rgb(131, 131, 131);
     display: block;
+    background-color: #45588f;
     text-decoration: none !important;
+}
+
+.news:hover h2,
+.news:hover p {
+    color: white;
+}
+
+.news h2 {
+    padding: 0.3rem 1rem;
 }
 
 .news p {
     text-align: left;
     margin: 20px 0 0 0;
-    padding: 0.3rem;
+    padding: 0.3rem 1rem;
+    font-size: 1rem;
     font-weight: lighter;
 }
 
