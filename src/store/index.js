@@ -224,29 +224,25 @@ export default new Vuex.Store({
         votes(state) {
             // eslint-disable-next-line no-undef
             axios
-                .get('https://ftvnews.com.tw/topics/tai2area/poll220109.json')
+                .get('https://www.ftvnews.com.tw/api/poll220109.json')
                 .then(function (res) {
-                    let votes = res.data.Data
+                    let votes = res.data.Data[1].Candidate
                     let total =
-                        votes[0].AgreeTickets +
-                        votes[1].AgreeTickets +
-                        votes[2].AgreeTickets +
-                        votes[3].AgreeTickets +
-                        votes[4].AgreeTickets
+                        votes[0].Tickets + votes[1].Tickets + votes[2].Tickets + votes[3].Tickets + votes[4].Tickets
 
                     for (let i = 0; i < state.guys.length; i++) {
-                        let bar = (votes[i].AgreeTickets / state.vote_total) * 100 // 票數百分比
+                        let bar = (votes[i].Tickets / state.vote_total) * 100 // 票數百分比
 
                         document.querySelectorAll('.percent')[i].innerHTML = Math.floor(
-                            (votes[i].AgreeTickets / total) * 100
+                            (votes[i].Tickets / total) * 100
                         )
-                        if (votes[i].AgreeTickets >= 120000) {
+                        if (votes[i].Tickets >= 120000) {
                             document.querySelectorAll('.vote_progress')[i].style.width = 100 + '%'
                         } else {
                             document.querySelectorAll('.vote_progress')[i].style.width = bar + '%' // progress長度
                         }
 
-                        state.vote_personal[i].valid_vote = votes[i].AgreeTickets.toString().replace(
+                        state.vote_personal[i].valid_vote = votes[i].Tickets.toString().replace(
                             /\B(?=(\d{4})+(?!\d))/g,
                             '萬'
                         ) // api新票數 取代 預設票數值vote_personal
