@@ -44,11 +44,11 @@ export default {
     },
     methods: {
         // 持續抓取新票數
-        keepGetVotes() {
-            setInterval(() => {
-                this.$store.commit('votes')
-            }, 1500)
-        },
+        // keepGetVotes() {
+        //     setInterval(() => {
+        //         this.$store.commit('votes')
+        //     }, 15000)
+        // },
     },
 
     computed: {
@@ -132,13 +132,9 @@ div h4 {
     background-color: #aaaaaa;
     width: 100%;
     height: 20px;
-    border-radius: 10px;
+    border-radius: 0 10px 10px 0;
     display: flex;
     margin: 1rem 0 2rem 0;
-}
-
-.vote_bar span {
-    border-radius: 10px;
 }
 
 .vote_progress {

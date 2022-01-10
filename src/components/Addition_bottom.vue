@@ -1,7 +1,7 @@
 <template>
     <div class="bottom">
-        <a href="https://lihi1.cc/tFTMc">直播專區</a>
-        <!-- <a href="https://lihi1.cc/Z6F3Q">即時開票</a> -->
+        <!-- <a href="https://lihi1.cc/tFTMc">直播專區</a> -->
+        <a href="https://lihi1.cc/Z6F3Q">即時開票</a>
         <a href="https://lihi1.cc/YkwdL">候選人介紹</a>
         <a href="https://lihi1.cc/kmZIC">最新新聞</a>
     </div>

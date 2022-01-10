@@ -2,12 +2,12 @@
     <div>
         <Header />
         <COntentBanner />
-        <!-- <ContentVoting /> -->
-        <!-- <InfogramResult /> -->
+        <ContentVideo />
+        <ContentVoting />
+        <InfogramResult />
         <ContentProfile />
         <InfogramVoted />
         <ContentProcess />
-        <ContentVideo />
         <ContentNews />
         <Footer />
         <AdditionSide />
@@ -20,10 +20,10 @@
 import Header from '@/components/Header.vue'
 import COntentBanner from '@/components/Content_banner.vue'
 import ContentVideo from '@/components/Content_video.vue'
-// import ContentVoting from '@/components/Content_voting.vue'
+import ContentVoting from '@/components/Content_voting.vue'
 import InfogramVoted from '@/components/Infogram_voted.vue'
 import ContentProfile from '@/components/Content_profile.vue'
-// import InfogramResult from '@/components/Infogram_result.vue'
+import InfogramResult from '@/components/Infogram_result.vue'
 import ContentProcess from '@/components/Content_process.vue'
 import ContentNews from '@/components/Content_news.vue'
 import Footer from '@/components/Footer.vue'
@@ -37,10 +37,10 @@ export default {
         Header,
         COntentBanner,
         ContentVideo,
-        // ContentVoting,
+        ContentVoting,
         InfogramVoted,
         ContentProfile,
-        // InfogramResult,
+        InfogramResult,
         ContentProcess,
         ContentNews,
         Footer,

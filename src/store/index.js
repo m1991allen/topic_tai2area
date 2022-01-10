@@ -233,9 +233,10 @@ export default new Vuex.Store({
                     for (let i = 0; i < state.guys.length; i++) {
                         let bar = (votes[i].Tickets / state.vote_total) * 100 // 票數百分比
 
-                        document.querySelectorAll('.percent')[i].innerHTML = Math.floor(
-                            (votes[i].Tickets / total) * 100
+                        document.querySelectorAll('.percent')[i].innerHTML = ((votes[i].Tickets / total) * 100).toFixed(
+                            2
                         )
+
                         if (votes[i].Tickets >= 120000) {
                             document.querySelectorAll('.vote_progress')[i].style.width = 100 + '%'
                         } else {
